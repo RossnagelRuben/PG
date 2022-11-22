@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TableRelacionClienteTramite>
+@{
+    List<TableSubTramite> listaTramites = null;
+    if (ViewData.ContainsKey("Tramites"))
+    {
+        listaTramites = (List<TableSubTramite>)ViewData["Tramites"];
+    }
+    int IdCliente = Convert.ToInt32(ViewData["Idcliente"]);
+}
+<h1>Tramites Cliente: @ViewData["cliente"]</h1>
+<p>
+    @*con asp-route-nombreParametro podedmos pasar valores a la funcion*@
+    <a asp-action="Create" asp-route-IDCLIENT="@IdCliente">Asociar Nuevo Tramite al Cliente @ViewData["cliente"]</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tramite:
+            </th>
+            <th>
+                Descripcion:
+            </th>
+            <th>
+                Estado:
+            </th>
+            <th>
+                Fecha Alta:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @foreach (var itemT in listaTramites)
+                    {
+                        if (itemT.IdsubTramite == item.IdsubTramite)
+                        {
+                            <p>@itemT.TituloSubTramite</p>
+                        }
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaAlta)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-idtramite="@item.Idrelacion" asp-route-nombre="@ViewData["cliente"]" asp-route-idcliente="@ViewData["Idcliente"]" class="btn btn-primary" >Editar</a> |
+                    <a asp-action="Detalles" asp-route-id="@item.Idrelacion" asp-route-idcliente="@IdCliente" asp-route-nombre="@ViewData["cliente"]" class="btn btn-secondary" >Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Idrelacion" class="btn btn-danger" >Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

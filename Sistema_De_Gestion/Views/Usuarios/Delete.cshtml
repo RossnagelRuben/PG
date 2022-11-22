@@ -1,0 +1,19 @@
+﻿@model Sistema_De_Gestion.Models.TableUsuario
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+<h4>Estas seguro de eliminar el Usuario @Html.DisplayFor(model => model.Usuario)</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">Tipo de Rol:</dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdRolNavigation.Descripcion)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdUsuario" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Volver a la lista</a>
+    </form>
+</div>

@@ -1,0 +1,85 @@
+﻿{
+  "CodeGenerationMode": 2,
+  "ContextClassName": "EstudioJuridicoContext",
+  "ContextNamespace": null,
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": null,
+  "OutputContextPath": "",
+  "OutputPath": "Models",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "Sistema_De_Gestion",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "Name": "[dbo].[Table_Acciones]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Clientes]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Correos]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Logs]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Permisos]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Relacion_Cliente_Tramites]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Roles]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Sub_Tramite]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Telefonos]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Tipo_Tramite]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Usuarios]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[Table_Ventanas]",
+      "ObjectType": 0
+    }
+  ],
+  "UiHint": "SQL5101.site4now.net",
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDbContextSplitting": false,
+  "UseFluentApiOnly": false,
+  "UseHandleBars": false,
+  "UseHierarchyId": false,
+  "UseInflector": true,
+  "UseLegacyPluralizer": false,
+  "UseManyToManyEntity": false,
+  "UseNoConstructor": false,
+  "UseNoDefaultConstructor": false,
+  "UseNoNavigations": false,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": false,
+  "UseSchemaFolders": false,
+  "UseSpatial": false,
+  "UseT4": false
+}

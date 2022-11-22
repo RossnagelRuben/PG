@@ -1,0 +1,11 @@
+﻿@model TableCliente
+    <h4>Seguro de eliminar el cliente?</h4>
+<div>
+    <form asp-action="Delete" asp-controller="TableClientes">
+        <input type="hidden" asp-for="IdCliente" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    </form>
+    <br />
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+</div>

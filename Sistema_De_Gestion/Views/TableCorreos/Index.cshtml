@@ -1,0 +1,34 @@
+﻿@model IEnumerable<TableCorreo>
+<h1>Correos Cliente: @ViewData["Nombre"]</h1>
+<p>
+    <a asp-action="Crear" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]">Asociar Nuevo Correo de contacto al Cliente @ViewData["Nombre"]</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Correo:
+            </th>
+            <th>
+                Fecha Alta:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaAlta)
+            </td>
+            <td>
+                <a asp-action="Editar" asp-route-idcorreo="@item.IdCorreo" asp-route-idcliente="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" class="btn btn-primary">Editar</a> |
+                    <a asp-action="Delete" asp-route-idcorreo="@item.IdCorreo" asp-route-idcliente="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

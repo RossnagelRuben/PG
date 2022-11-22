@@ -1,0 +1,57 @@
+﻿@model TableSubTramite
+
+@{
+    List<TableTipoTramite> listaTramites = null;
+    if (ViewData.ContainsKey("Tramites"))
+    {
+        listaTramites = (List<TableTipoTramite>)ViewData["Tramites"];
+    }
+}
+<h4>Editando Tramite: @Model.TituloSubTramite</h4>
+<br />
+<div>
+    <div>
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdsubTramite" />
+            <div class="form-group">
+                <label asp-for="Idtramite" class="control-label">Seleccione un Tramite Padre:</label>
+                <select asp-for="Idtramite" class="form-control" asp-items="ViewBag.Idtramite">
+                    @{
+                        if (listaTramites != null && listaTramites.Count > 0)
+                        {
+                            for (int i = 0; i < listaTramites.Count(); i++)
+                            {
+                                var tramite = listaTramites[i];
+                                <option value="@tramite.Idtramite">@tramite.TituloTramite</option>
+                            }
+                        }
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Titulo Tramite:</label>
+                <input asp-for="TituloSubTramite" class="form-control" />
+                <span asp-validation-for="TituloSubTramite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Descripcion Tramite:</label>
+                <input asp-for="DescripcionSubTramite" class="form-control" />
+                <span asp-validation-for="DescripcionSubTramite" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Habilitado" /> @Html.DisplayNameFor(model => model.Habilitado)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Guardar Cambios" class="btn btn-primary" /> |
+                <a asp-action="Index" class="btn btn-secondary">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

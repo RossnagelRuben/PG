@@ -1,0 +1,9 @@
+﻿@model TableCorreo
+<h4>Seguro de eliminar el Correo de @ViewData["Nombre"] ?</h4>
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdCorreo" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" /> |
+        <a class="btn btn-secondary" asp-action="Index" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]">Volver</a>
+    </form>
+</div>

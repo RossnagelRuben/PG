@@ -1,0 +1,25 @@
+﻿@model Sistema_De_Gestion.Models.TableUsuario
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h4>Detalles Usuario:</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">Usuario:</dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>  
+        <dt class = "col-sm-2">Rol:</dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdRolNavigation.Descripcion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdUsuario">Editar</a> |
+    <a asp-action="Index">Volver a la lista de Usuarios</a>
+</div>

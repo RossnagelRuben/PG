@@ -1,0 +1,43 @@
+﻿@model TableRelacionClienteTramite
+
+<div>
+    <h4>Tramite: @ViewData["tramite"] , del Cliente: @ViewData["cliente"]</h4>
+    <hr />
+    <br />
+    <dl class="row">
+        <dt class="col-sm-10">
+            Descripcion:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-10">
+            Estado:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+        <dt class="col-sm-10">
+            Dado de Alta el:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FechaAlta)
+        </dd>
+        <dt class="col-sm-10">
+            Ultima Modificacion:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FechaUltModificacion)
+        </dd>
+        <dt class="col-sm-10">
+            Habilitado:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Habilitado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Editar" asp-route-idtramite="@Model.Idrelacion" asp-route-nombre="@ViewData["cliente"]" asp-route-idcliente="@ViewData["idcliente"]" class="btn btn-primary" >Editar</a> |
+    <a asp-action="Index" asp-route-id="@Model.IdCliente" class="btn btn-secondary">Volver</a>
+</div>

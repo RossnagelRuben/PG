@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TableLog>
+<h1>Logs</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Descripcion</th>
+            <th>Detalles</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdLog)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Detaller)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaLog)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

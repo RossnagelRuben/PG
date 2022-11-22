@@ -1,0 +1,168 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sistema_De_Gestion
+build_property.RootNamespace = Sistema_De_Gestion
+build_property.ProjectDir = C:\Proyectos\PG - copia11\Sistema_De_Gestion\Sistema_De_Gestion\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Proyectos\PG - copia11\Sistema_De_Gestion\Sistema_De_Gestion
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Acceso/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Home/Logs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableClientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDbGllbnRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableClientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDbGllbnRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableClientes/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDbGllbnRlc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableClientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDbGllbnRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableClientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDbGllbnRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableCorreos/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDb3JyZW9zXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableCorreos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDb3JyZW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableCorreos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDb3JyZW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableCorreos/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDb3JyZW9zXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableCorreos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVDb3JyZW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableRelacionClienteTramites/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVSZWxhY2lvbkNsaWVudGVUcmFtaXRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableRelacionClienteTramites/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVSZWxhY2lvbkNsaWVudGVUcmFtaXRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableRelacionClienteTramites/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVSZWxhY2lvbkNsaWVudGVUcmFtaXRlc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableRelacionClienteTramites/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVSZWxhY2lvbkNsaWVudGVUcmFtaXRlc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableRelacionClienteTramites/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVSZWxhY2lvbkNsaWVudGVUcmFtaXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableSubTramites/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVTdWJUcmFtaXRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableSubTramites/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVTdWJUcmFtaXRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableSubTramites/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVTdWJUcmFtaXRlc1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableSubTramites/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVTdWJUcmFtaXRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableSubTramites/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVTdWJUcmFtaXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableTelefonos/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVUZWxlZm9ub3NcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableTelefonos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVUZWxlZm9ub3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableTelefonos/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVUZWxlZm9ub3NcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/TableTelefonos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVUZWxlZm9ub3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyectos/PG - copia11/Sistema_De_Gestion/Sistema_De_Gestion/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b8oogp6g4n

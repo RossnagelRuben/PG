@@ -1,0 +1,42 @@
+﻿@model IEnumerable<TableTelefono>
+<h1>Telefonos Cliente: @ViewData["Nombre"]</h1>
+<p>
+    <a asp-action="Crear" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]">Asociar Nuevo Telefono de contacto al Cliente @ViewData["Nombre"]</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Telefono:
+            </th>
+            <th>
+                Observación:
+            </th>
+            <th>
+                Fecha Alta:
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.CodigoDeArea - @item.Telefono
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Obs)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaAlta)
+                </td>
+                <td>
+                    <a asp-action="Editar" asp-route-idtelef="@item.IdTelefono" asp-route-idcliente="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" class="btn btn-primary">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdTelefono" asp-route-idcliente="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

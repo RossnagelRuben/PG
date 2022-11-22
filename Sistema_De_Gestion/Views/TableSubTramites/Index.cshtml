@@ -1,0 +1,31 @@
+﻿@model IEnumerable<TableSubTramite>
+
+<h1>Tramites</h1>
+<p>
+    <a asp-action="Create">Crear Nuevo Tramite</a>
+</p>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Titulo del Tramite:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TituloSubTramite)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdsubTramite" class="btn btn-primary">Editar</a> |
+                <a asp-action="Detalles" asp-route-id="@item.IdsubTramite" class="btn btn-secondary">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdsubTramite" asp-route-tramite="@item.DescripcionSubTramite" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

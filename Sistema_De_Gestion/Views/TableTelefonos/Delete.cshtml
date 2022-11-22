@@ -1,0 +1,11 @@
+﻿@model TableTelefono
+<h4>
+    Seguro de eliminar el Telefono de @ViewData["Nombre"] ?
+</h4>
+<div>    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdTelefono" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" asp-route-idcliente="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]"/> |
+        <a class="btn btn-secondary" asp-action="Index" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]">Volver</a>
+    </form>
+</div>

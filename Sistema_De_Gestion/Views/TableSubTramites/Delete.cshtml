@@ -1,0 +1,10 @@
+﻿@model TableSubTramite
+<h4>Seguro de eliminar el Tramite @ViewData["Tramite"] ?</h4>
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdsubTramite" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" asp-route-idcliente="@ViewData["IDTramite"]" asp-route-tramite="@ViewData["Tramite"]" /> |
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    </form>
+</div>

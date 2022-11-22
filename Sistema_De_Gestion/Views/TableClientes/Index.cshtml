@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TableCliente>
+
+@{
+    //ViewData["Title"] = "Index";
+}
+
+<h1>Clientes</h1>
+<p>
+    <a asp-action="Create">Crear Nuevo Cliente</a>
+</p>
+<br />
+<div class="container">
+
+    @{
+        if (Model?.Count() > 0)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            CUIL:
+                        </th>
+                        <th>
+                            Nombre Completo:
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                            @*@{
+                            string CUIL = item.Cuil1.ToString() + " - " + item.Dni.ToString() + " - " + item.Cuil2.ToString();
+                            @CUIL;
+                            }*@
+
+                            @item.Cuil1 - @item.Dni - @item.Cuil2
+                            </td>
+                            <td>
+                                @item.Nombres @item.Apellidos
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.IdCliente" class="btn btn-primary">Editar</a> |
+                                <a asp-action="Detalles" asp-route-id="@item.IdCliente" class="btn btn-secondary">Detalles</a> |
+                                <a asp-controller="TableTelefonos" asp-action="Index" asp-route-id="@item.IdCliente" asp-route-nombre="@item.Apellidos @item.Nombres" class="btn btn-info">Telefonos</a> |
+                                <a asp-controller="TableCorreos" asp-action="Index"  asp-route-id="@item.IdCliente" asp-route-nombre="@item.Apellidos @item.Nombres" class="btn btn-info">Correos</a> |
+                                <a asp-controller="TableRelacionClienteTramites" asp-action="Index" asp-route-id="@item.IdCliente" class="btn btn-info">Tramites</a> |
+                                <a asp-action="Delete" asp-route-id="@item.IdCliente" class="btn btn-danger">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        }
+        else
+        {
+            <br />
+            <p class="text-danger">No hay ningun Usuario en la Base de Datos</p>
+        }
+    }
+</div>

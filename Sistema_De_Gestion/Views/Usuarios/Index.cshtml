@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Sistema_De_Gestion.Models.TableUsuario>
+@{
+    ViewData["Title"] = "Usuarios";
+}
+<h1>Usuarios</h1>
+<p>
+    <a asp-action="Create">Crear Nuevo Usuario</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Correo Usuarios</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Usuario)
+                </td>
+                <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdUsuario" class="btn btn-primary">Edtiar</a> |
+                        <a asp-action="Details" asp-route-id="@item.IdUsuario" class="btn btn-secondary">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.IdUsuario" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

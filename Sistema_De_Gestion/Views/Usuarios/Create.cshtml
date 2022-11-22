@@ -1,0 +1,46 @@
+﻿@model Sistema_De_Gestion.Data.Usuario2
+@{
+    ViewData["Title"] = "Crear Usuario";
+}
+<h4>Crear Usuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label class="control-label">Usuario:</label>
+                <input asp-for="Usuario" class="form-control" />
+                <span asp-validation-for="Usuario" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label class="control-label">Password:</label>
+                <input asp-for="Pas" class="form-control" type="password"/>
+                <span asp-validation-for="Pas" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label class="control-label">Confirmar Password:</label>
+                <input name="ConfirmPass" class="form-control" type="password" />
+            </div>
+            <br />
+            <div class="form-group">
+                <label class="control-label">Seleccionar Rol:</label>
+                <select asp-for="IdRol" class ="form-control" asp-items="ViewBag.IdRol"></select>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Crear Usuario" class="btn btn-primary" />
+            </div>
+            <br />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </form>
+    </div>
+</div>
+<div>
+    <br />
+    <a asp-action="Index">Regresar a la Lista de Usuarios</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

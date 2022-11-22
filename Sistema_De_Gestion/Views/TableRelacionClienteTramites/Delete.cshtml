@@ -1,0 +1,9 @@
+﻿@model TableRelacionClienteTramite
+<h4>Seguro de eliminar la Relacion?</h4>
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idrelacion" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index" asp-route-id="@Model.IdCliente" class="btn btn-secondary" >Volver</a>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+﻿@model TableCorreo
+<h4>Dando de Alta nuevo Correo al cliente @ViewData["Nombre"]</h4>
+<br />
+<div>
+    <div>
+        <form asp-action="Crear">
+            @*donde pasa asp el id?*@
+            <input name="nombre" hidden="hidden" value="@ViewData["Nombre"]"/>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Correo" class="control-label">Correo:</label>
+                <input asp-for="Correo" class="form-control" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input checked="checked" class="form-check-input" asp-for="Habilitado" /> @Html.DisplayNameFor(model => model.Habilitado)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" /> |
+                <a asp-action="Index" asp-route-id="@ViewData["idCliente"]" asp-route-nombre="@ViewData["Nombre"]" class="btn btn-secondary">Volver</a>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
