@@ -12,6 +12,6 @@
 
 cvu para donaciones 💵: RubenRossnagel
 
-Link de Acceso: [App Web]([http://rubencitosistemas.epizy.com/](http://rubenrossnagel-001-site1.atempurl.com/))
+Link de Acceso: [App Web](http://rubenrossnagel-001-site1.atempurl.com/)
 
 Desarrollado por: [Ruben Rossnagel](http://rubencitosistemas.epizy.com/)
