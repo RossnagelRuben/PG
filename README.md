@@ -4,7 +4,7 @@
 - Se desarrollo usando visual studio y c# con el modelo MVC (Modelo, Vista Controlador) tambien usamos SQL Server para la creacion de las tablas
 - Es una version demo de codigo abierto para que los programadores/as puedan ver su funcionamiento y colaborar con el proyecto si quieren
 - como es Web, es multiplataforma 🙌
-- Espero que les Guste 😊
+- Espero que les sea util 😊
 
 
 
@@ -13,5 +13,7 @@
 cvu para donaciones 💵: RubenRossnagel
 
 Link de Acceso: [App Web](http://rubenrossnagel-001-site1.atempurl.com/)
+
+Documentacion de usuario: [Manual](https://drive.google.com/file/d/1FRoi5eNBPfwdddgfbEHKOAc_8ZBH9Qqk/view?usp=share_link)
 
 Desarrollado por: [Ruben Rossnagel](http://rubencitosistemas.epizy.com/)
